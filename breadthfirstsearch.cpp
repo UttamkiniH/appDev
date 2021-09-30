@@ -71,6 +71,8 @@ void Graph::BFS(int s)
 				visited[*i] = true;
 				queue.push_back(*i);
 			}
+			if(visited==0)
+				exit(0);
 		}
 	}
 }

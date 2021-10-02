@@ -37,6 +37,9 @@ void Graph::DFS(int v)
     for (i = adj[v].begin(); i != adj[v].end(); ++i)
         if (!visited[*i])
             DFS(*i);
+  for (i = adj[v].end(); i != adj[v].begin(); ++i)
+    visited!= i;
+  
 }
   
 // Driver code

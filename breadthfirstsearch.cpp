@@ -31,9 +31,14 @@ Graph::Graph(int V)
 	adj = new list<int>[V];
 }
 
-void Graph::addEdge(int v, int w)
+// void Graph::addEdge(int v, int w)
+// {
+// 	adj[v].push_back(w); // Add w to v’s list.
+// }
+
+void Graph::removeEdge(int v, int s)
 {
-	adj[v].push_back(w); // Add w to v’s list.
+	adj[v].back(w);
 }
 
 void Graph::BFS(int s)
